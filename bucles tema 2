@@ -11,3 +11,17 @@ while x/2 > y:
 
 if r != x:
     print("el número " + str(x) + " no es cuadrado perfecto.")
+    
+
+
+print("ejercicio 19:")
+x = int(input("introduzca un número del 1 al 9 para ver su tabla de multiplicación: "))
+y = 0
+if x > 9 or x <=0:
+    print("indroduzca un número correcto natural entre 1 y el 9. ")
+else:
+    while y < 11:
+        print( str(x) + " * " + str(y) + " = " + str(x * y))
+        y = 1 + y
+
+    
