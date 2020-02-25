@@ -57,7 +57,21 @@ if z >= 60:
 if x < 24 and y < 60 and z < 60:
     print("Ha introducido una hora valida: " + str(x) + " horas, " + str(y) + " minutos y " + str(z) + " segundos.")
 
-    
+print("ejercicio 11:")
+x = int(input("introduce un año para saber si es bisiesto: "))
+y = x % 4
+z = x % 400
+s = x % 100
+if y == 0:
+    if s == 0 :
+        if z == 0:
+            print("El año es bisiesto.")
+        else:
+            print("El año no es bisiesto.")
+    else: print("El año es bisiesto.")
+else: print("El año " + str(x) + " no es bisiesto.")
+
+ 
 print("ejercicio 17")
 x = int(input("introduzca su año de nacimiento para saber su horóscopo chino: "))
 y = x % 12
