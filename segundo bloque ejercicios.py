@@ -31,6 +31,33 @@ if -1.0 < x < 1.0 :
 else:
     print("El número " + str(x) + " no se encuentra en el intervalo (-1.0,1.0)")
 
+print("ejercicio 9")
+print("Introduzca un punto de la forma (x,y): ")
+x = float(input("introduzca x: "))
+y = float(input("introduzca y: "))
+if x > 0 and y > 0:
+    print("El punto (" + str(x)+","+ str(y) + ") se encuentra en el primer cuadrante.")
+if x > 0 and y < 0:
+    print("El punto (" + str(x)+","+ str(y) + ") se encuentra en el cuarto cuadrante.")
+if x < 0 and y > 0:
+    print("El punto (" + str(x)+","+ str(y) + ") se encuentra en el segundo cuadrante.")
+if x < 0 and y < 0:
+    print("El punto (" + str(x)+","+ str(y) + ") se encuentra en el tercer cuadrante")
+
+print("ejercicio 10")
+x = float(input("introduzca las horas: "))
+y = float(input("introduzca los minutos: "))
+z = float(input("introduzca las segundos: "))
+if x >= 24:
+    print("formato de horas introducido erroneamente.")
+if y >= 60:
+    print("formato de minutos introducido erroneamente.")
+if z >= 60:
+    print("formato de segundos introducido erroneamente.")
+if x < 24 and y < 60 and z < 60:
+    print("Ha introducido una hora valida: " + str(x) + " horas, " + str(y) + " minutos y " + str(z) + " segundos.")
+
+    
 print("ejercicio 17")
 x = int(input("introduzca su año de nacimiento para saber su horóscopo chino: "))
 y = x % 12
