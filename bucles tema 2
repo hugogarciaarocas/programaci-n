@@ -1,0 +1,13 @@
+print("ejercicio 18:")
+x = int(input("introduzca un número natural para saber si es cuadrado perfecto: "))
+y = 1
+r = 0
+while x/2 > y:
+    z = y * y
+    y = 1 + y
+    if z == x:
+        print("El número " + str(x) + " es un cuadrado perfecto con " + str(y - 1) + " de raiz.")
+        r = (y-1) * (y-1)
+
+if r != x:
+    print("el número " + str(x) + " no es cuadrado perfecto.")
