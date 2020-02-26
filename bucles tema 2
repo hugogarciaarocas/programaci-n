@@ -73,3 +73,16 @@ while x >= y:
         y = y + 1
 
 ........................................................................................................................................
+
+print("Ejercicio 22:")
+print("Calculaador de medias")
+x = int(input("Introduzca cuantos números usará: "))
+y = 1
+z = 0
+while y <= x:
+    w = float(input("introduzca un número: "))
+    y = y + 1
+    z = z + w
+print("La media de los números es: " + str(z / x))
+
+........................................................................................................................................
