@@ -86,3 +86,17 @@ while y <= x:
 print("La media de los números es: " + str(z / x))
 
 ........................................................................................................................................
+
+print("Ejercicio 24:")
+x = int(input("Introduzca un número para saaber si es primo: "))
+y = 2
+while x/2 > y:
+    if x % y == 0:
+        print("El número " + str(x) + " no es primo.")
+        y = x + 1
+    else:
+        y = y + 1
+if x/2 <= y < x or x == 2:
+    print("El número " + str(x) + " es primo.")
+    
+........................................................................................................................................
