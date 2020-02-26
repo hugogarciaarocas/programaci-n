@@ -1,3 +1,4 @@
+.......................................................................................................................................
 print("ejercicio 18:")
 x = int(input("introduzca un número natural para saber si es cuadrado perfecto: "))
 y = 1
@@ -12,7 +13,7 @@ while x/2 > y:
 if r != x:
     print("el número " + str(x) + " no es cuadrado perfecto.")
     
-
+.......................................................................................................................................
 
 print("ejercicio 19:")
 x = int(input("introduzca un número del 1 al 9 para ver su tabla de multiplicación: "))
@@ -23,6 +24,9 @@ else:
     while y < 11:
         print( str(x) + " * " + str(y) + " = " + str(x * y))
         y = 1 + y
+
+
+.......................................................................................................................................
 
 print("ejercicio 20:")
 print("introduzca un número natural para ver si es par o impar (si introduce el 0 se acaba el programa): ")
@@ -35,4 +39,26 @@ while x != 0:
         print("El número " + str(x) + " es impar.")
 if x == 0:
     print("stop")
+
+.......................................................................................................................................
     
+print("ejercicio 21:")
+print("introduzca un número natural para ver si es par o impar (si introduce el 0 se acaba el programa): ")
+x = 1
+y = 0
+z = 0
+while x != 0:
+    x = int(input("introduzca un número natural: "))
+    if x % 2 == 0 and x != 0:
+        print("El número " + str(x) + " es par.")
+        y = 1 + y
+    if x % 2 != 0 and x != 0:
+        print("El número " + str(x) + " es impar.")
+        z = 1 + y
+if x == 0:
+    print("Total de números pares: " + str(y))
+    print("Total de números impares: " + str(z))
+ 
+ .......................................................................................................................................
+ 
+ 
