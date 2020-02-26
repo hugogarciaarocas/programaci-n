@@ -24,4 +24,15 @@ else:
         print( str(x) + " * " + str(y) + " = " + str(x * y))
         y = 1 + y
 
+print("ejercicio 20:")
+print("introduzca un número natural para ver si es par o impar (si introduce el 0 se acaba el programa): ")
+x = 1
+while x != 0:
+    x = int(input("introduzca un número natural: "))
+    if x % 2 == 0 and x != 0:
+        print("El número " + str(x) + " es par.")
+    if x % 2 != 0 and x != 0:
+        print("El número " + str(x) + " es impar.")
+if x == 0:
+    print("stop")
     
