@@ -111,3 +111,22 @@ while x <= y:
     else:
         x = x + 7
 ........................................................................................................................................
+
+print("Ejercicio 22")
+x = int(input("Introduce un número para saber si es abundante, perfecto o deficiente: "))
+y = 1
+z = 0
+while x > y:
+    if x % y == 0:
+        z = z + y
+        y = y + 1
+    else:
+        y = y + 1
+if z > x:
+    print("El número " + str(x) + " es abundante.")
+if z == x or x == 1:
+    print("El número " + str(x) + " es perfecto.")
+if 1 < z < x:
+    print("El número " + str(x) + " es deficiente.")
+ 
+........................................................................................................................................
