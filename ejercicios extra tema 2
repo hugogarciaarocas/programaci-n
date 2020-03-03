@@ -6,3 +6,14 @@ while x >= y:
     y = y + 1
 .........................................................................................................................................
 
+print("Ejercicio 28")
+x = int(input("Introduzca un número para calcular su secuencia de Collatz: "))
+print(str(x))
+y = x
+while y != 1:
+    if y % 2 == 0:
+        y = int(y / 2)
+        print(str(y))
+    elif y % 2 != 0:
+        y = int((y * 3) + 1)
+        print(str(y))
