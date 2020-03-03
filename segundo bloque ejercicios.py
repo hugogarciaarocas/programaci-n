@@ -7,12 +7,15 @@ print("El cociente de la división es: " + str(z))
 z = x - y
 print("La resta es: " + str(z))
 
+........................................................................................................................................
 print("ejercicio 6:")
 print("Calculador de la ecuación ax+b=0 ")
 a = float(input("introduce a :"))
 b = float(input("introduce b :"))
 z = (-b / a)
 print("La solución es: " + str(z))
+
+........................................................................................................................................
 
 print("ejercicio 7: ")
 x = float(input("inserte un número para saber si es positivo: "))
@@ -24,12 +27,16 @@ elif x == 0:
 else:
     print("El número no es positivo")
 
+........................................................................................................................................
+
 print("ejercicio 8:")
 x = float(input("Inserte un número: "))
 if -1.0 < x < 1.0 :
     print("El número " + str(x) + " se encuentra en el intervalo (-1.0,1.0).")
 else:
     print("El número " + str(x) + " no se encuentra en el intervalo (-1.0,1.0)")
+
+........................................................................................................................................
 
 print("ejercicio 9")
 print("Introduzca un punto de la forma (x,y): ")
@@ -44,6 +51,9 @@ if x < 0 and y > 0:
 if x < 0 and y < 0:
     print("El punto (" + str(x)+","+ str(y) + ") se encuentra en el tercer cuadrante")
 
+    
+........................................................................................................................................
+
 print("ejercicio 10")
 x = float(input("introduzca las horas: "))
 y = float(input("introduzca los minutos: "))
@@ -56,6 +66,8 @@ if z >= 60:
     print("formato de segundos introducido erroneamente.")
 if x < 24 and y < 60 and z < 60:
     print("Ha introducido una hora valida: " + str(x) + " horas, " + str(y) + " minutos y " + str(z) + " segundos.")
+
+........................................................................................................................................
 
 print("ejercicio 11:")
 x = int(input("introduce un año para saber si es bisiesto: "))
@@ -71,7 +83,60 @@ if y == 0:
     else: print("El año es bisiesto.")
 else: print("El año " + str(x) + " no es bisiesto.")
 
- 
+........................................................................................................................................
+
+print("Ejercicio 13")
+x = int(float(input("Introduzca la nota: ")))
+if x == 0 or x < 5.0:
+    print("Suspenso.")
+if 5.0 <= x < 7.0:
+    print("Aprobado.")
+if 7.0 <= x < 8.5:
+    print("Notable.")
+if 8.5 <= x < 9.5:
+    print("Excelente")
+if 9.5 <= x <= 10.0:
+    print("matricula de honor.")
+if x < 0.0 or x >10.0:
+    print("Introduzca un número correcto (entre 0 y 10).")
+
+........................................................................................................................................
+
+print("ejercicio 14:")
+print("Convertidor de años a años caninos")
+x = (float(input("Introduzca los años: ")))
+print(x)
+if x <= 2:
+    z = x * 10.5
+    print("La edad de su perro es: " + str(z))
+if x > 2:
+    y = 4 * x + 13
+    print("La edad de su perro es: " + str(y))
+
+........................................................................................................................................
+print("Ejercicio 15")
+x = float(input("Introduce un número entero para saber si es multiplo de 2: "))
+if x % 2 == 0:
+    print("El número es múltiplo de 2.")
+if x % 2 != 0:
+    print("El número no es múltiplo de 2."
+........................................................................................................................................
+
+........................................................................................................................................
+print("Ejercicio 16")
+print("Introduce 2 números enteros para determinar si uno es múltiplo del otro.")
+x = int(input("Primer número: "))
+y = int(input("Segundo número: "))
+if x % y == 0:
+    print("El número " + str(x) + " es múltiplo de " + str(y) + ".")
+if y % x == 0:
+    print("El número " + str(y) + " es múltiplo de " + str(x) + ".")
+if x % y != 0 and y % x != 0:
+    print("No son múltiplos.")
+
+........................................................................................................................................
+
+
 print("ejercicio 17")
 x = int(input("introduzca su año de nacimiento para saber su horóscopo chino: "))
 y = x % 12
