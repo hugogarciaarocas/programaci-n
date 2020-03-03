@@ -1,0 +1,29 @@
+import sys
+print("Ejercicio 1")
+print("Introdueix una seqüència de texte acabada en punt para contar sus vocales.")
+lletra = sys.stdin.read(1)
+a = 0
+e = 0
+i = 0
+o = 0
+u = 0
+while lletra != '.':
+    if lletra == 'a':
+        a = a + 1
+    if lletra == 'e':
+        e = e + 1
+    if lletra == 'i':
+        i = i + 1
+    if lletra == 'o':
+        o = o + 1
+    if lletra == 'u':
+        u = u + 1
+
+    lletra = sys.stdin.read(1)
+print(" Hi ha un total de " + str(a) + " lletres a en el texte.")
+print(" Hi ha un total de " + str(e) + " lletres e en el texte.")
+print(" Hi ha un total de " + str(i) + " lletres i en el texte.")
+print(" Hi ha un total de " + str(o) + " lletres o en el texte.")
+print(" Hi ha un total de " + str(u) + " lletres u en el texte.")
+
+........................................................................................................................................
