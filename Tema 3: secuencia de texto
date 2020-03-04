@@ -106,3 +106,21 @@ while x != ".":
 print("El número de vocales es: " + str(y) + " , el número de consonantes es: " + str(w-y) + " , el número de espacios es: " + str(z))
 
 ........................................................................................................................................
+
+import sys
+print("Ejercicio 7")
+print("Introduzca una frase acabada en punto para saber cuantos espacios hay hasta encontrar la letra deseada.")
+y = str(input("Introduzca la letra: "))
+print("introduzca la frase:")
+x = sys.stdin.read(1)
+z = 0
+while x != y and x != ".":
+    if x == " ":
+        z = z + 1
+    x = sys.stdin.read(1)
+if x == y:
+    print("Hay " + str(z) + " espacios antes de la letra " + str(y) + ".")
+if x != y:
+    print("No hay letra " + str(y))
+
+........................................................................................................................................
