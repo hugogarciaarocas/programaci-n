@@ -45,6 +45,7 @@ while letra != "." and not encontrado:
         
 ........................................................................................................................................
 
+import sys
 print("Ejercicio 3")
 print("Introduzca una frase acabada en punto para contar la cantidad de espacios despues de la primera t:")
 letra = sys.stdin.read(1)
