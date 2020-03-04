@@ -44,3 +44,46 @@ while letra != "." and not encontrado:
         print("No he encontrado ninguna vocal.")
         
 ........................................................................................................................................
+
+print("Ejercicio 3")
+print("Introduzca una frase acabada en punto para contar la cantidad de espacios despues de la primera t:")
+letra = sys.stdin.read(1)
+enc = False
+x = 0
+while letra != ".":
+    if letra == "t" or letra == "T":
+        enc = True
+    if enc == True and letra == " ":
+        x = x + 1
+    letra = sys.stdin.read(1)
+if enc == True and x == 0:
+    print("No hay espacios despues de la primera t.")
+if enc == True and x != 0:
+    print("He encontrado " + str(x) + " espacios despues de la primera t.")
+else:
+    print("No he encontrado ninguna t.")
+........................................................................................................................................
+
+import sys
+print("Ejercicio 4")
+x = sys.stdin.read(1)
+y = x
+while x != ".":
+    if x > y:
+        y = x
+    x = sys.stdin.read(1)
+print("La letra más grande es:" + str(y))
+
+........................................................................................................................................
+
+import sys
+print("Ejercicio 5")
+x = sys.stdin.read(1)
+y = x
+while x != ".":
+    if x < y and x != " ":
+        y = x
+    x = sys.stdin.read(1)
+print("La letra más pequeña es :" + str(y))
+
+........................................................................................................................................
