@@ -87,3 +87,22 @@ while x != ".":
 print("La letra más pequeña es : " + str(y))
 
 ........................................................................................................................................
+
+import sys
+print("Ejercicio 6")
+print("Introduzca una frase acabada en punto para saber cuantas vocales, consonantes y espacios tiene:")
+x = sys.stdin.read(1)
+y = 0
+z = 0
+w = 0
+while x != ".":
+    if x == "a" or x == "e" or x == "i" or x == "o" or x == "u":
+        y = y + 1
+    if x == " ":
+            z = z + 1
+    else:
+        w = w + 1
+    x = sys.stdin.read(1)
+print("El número de vocales es: " + str(y) + " , el número de consonantes es: " + str(w-y) + " , el número de espacios es: " + str(z))
+
+........................................................................................................................................
