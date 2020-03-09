@@ -125,3 +125,20 @@ if x != y:
     print("No hay letra " + str(y))
 
 ........................................................................................................................................
+
+import sys
+print("Ejercicio 8")
+print("Introduzca una frase acabada en punto para saber cuantas letras hay entre los dos primeros espacios: ")
+x = sys.stdin.read(1)
+y = 0
+while x != " " and x != ".":
+   x = sys.stdin.read(1)
+x = sys.stdin.read(1)
+while x != " " and x != ".":
+    x = sys.stdin.read(1)
+    y = y + 1
+if y != 0:
+    print("Hay " + str(y) + " letras entre los dos primeros espacios.")
+if y == 0:
+    print("No hay 2 espacios en la secuencia.")
+
