@@ -37,6 +37,27 @@ while w == False:
         x = int(input("Introduce un número del 0-9: "))
 
 ........................................................................................................................................
+import sys
+print("Ejercicio 11")
+x = int(input("Introduzca un número para darle la vuelta:"))
+contador = 0
+número = x
+longitud = 0
+resultado = 0
+while x >= 1:
+    x = x / 10
+    longitud = longitud + 1
+while longitud > 0:
+    contador = contador + 1
+    y = 10 ** contador
+    z = número % y
+    número = número - z
+    z = z * (10 ** longitud) / (10 ** contador)
+    resultado = resultado + z
+    longitud = longitud - 1
+print(int(resultado))
+
+........................................................................................................................................
 
 ........................................................................................................................................
 print("Ejercicio 13")
