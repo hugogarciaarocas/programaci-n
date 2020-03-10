@@ -1,5 +1,26 @@
 
-...........................................................................................................................................
+........................................................................................................................................
+
+print("Ejercicio 4 a)")
+x = str(input("Introduce una letra mayuscula para saber cual es la siguiente: "))
+z = ord(x)
+z = z + 1
+if z > 90:
+    z = z - 26
+    print(chr(z))
+else:
+    print(chr(z))
+print("Ejercicio 4b)")
+x = str(input("Introduce una letra mayuscula y un número para saber a que letra corresponde en la rotación: "))
+y = int(input("Introduce n: "))
+z = ord(x)
+z = z + y
+if z <= 90:
+    print(chr(z))
+while z > 90:
+    z = z - 26
+print(chr(z))
+........................................................................................................................................
 
 import sys
 print("Ejercicio 5")
