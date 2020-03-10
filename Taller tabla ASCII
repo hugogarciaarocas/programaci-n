@@ -1,0 +1,15 @@
+
+...........................................................................................................................................
+
+import sys
+print("Ejercicio 5")
+print("Introduzca una frase acabada en punto para saber si hay pares de letras con letras del abecedario consecutivas: ")
+letra_posterior = sys.stdin.read(1)
+letra_anterior = " "
+contador = 0
+while letra_posterior != ".":
+    if ord(letra_posterior) - 1 == ord(letra_anterior):
+        contador = contador + 1
+    letra_anterior = letra_posterior
+    letra_posterior = sys.stdin.read(1)
+print("Hay " + str(contador) + " parejas de letras del abecedario consecutivas.")
