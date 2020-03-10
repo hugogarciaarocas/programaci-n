@@ -1,0 +1,19 @@
+print("Ejercicio 10")
+import random
+x = int(input("Introduce un número del 0-9: "))
+y = random.randint(0,9)
+z = 0
+w = False
+while w == False:
+    if y == x and 0 <= x <= 9:
+        w = True
+        z = z + 1
+        print("has encontrado el número aleatorio " + str(y) + " en " + str(z) + " intentos.")
+    elif y != x and 0 <= x <= 9:
+        z = z + 1
+        x = int(input("Introduce otro número del 0-9: "))
+    else:
+        print("Introduce un número correcto entre el 0-9 ambos incluidos.")
+        x = int(input("Introduce un número del 0-9: "))
+
+...........................................................................................................................................
