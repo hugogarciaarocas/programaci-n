@@ -1,3 +1,23 @@
+
+print("Ejercicio 9")
+x = 1
+y = 1
+w = int(input("numero: "))
+print(x)
+while w >= x and w >= y and w >= x:
+    if x >= y:
+        print(x)
+        y = x + y
+    else:
+        print(y)
+        x = y + x
+if y > x != w:
+    print(y)
+if x > y != w:
+    print(x)
+
+...........................................................................................................................................
+
 print("Ejercicio 10")
 import random
 x = int(input("Introduce un número del 0-9: "))
