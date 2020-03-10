@@ -1,3 +1,25 @@
+print("Ejercicio 1")
+x = ord(str(input("Introduce una letra para saber su valor ASCII: ")))
+print(x)
+
+........................................................................................................................................
+
+print("Ejercicio 2")
+x = ord(str(input("Introduce una letra para saber su valor ASCII: ")))
+if 65 <= x <= 90:
+    print(chr(x) + " es una letra mayúscula.")
+else:
+    print(chr(x) + " no es una letra mayúscula.")
+
+........................................................................................................................................
+
+print("Ejercicio 3")
+x = (str(input("Introduce una letra minúscula para saber su mayúscula: ")))
+y = ord(x) - 32
+if 65 <= y <= 90:
+    print("La mayúscula de " + str(x) +" es " + chr(y) + "." )
+else:
+    print(str(x) + " no es una letra minúscula.")
 
 ........................................................................................................................................
 
