@@ -1,0 +1,45 @@
+import sys
+print("How many reversible numbers are there below one thousand?")
+def voltear(x):
+    contador = 0
+    número = x
+    longitud = 0
+    resultado = 0
+    while x >= 1:
+        x = x / 10
+        longitud = longitud + 1
+    while longitud > 0:
+        contador = contador + 1
+        y = 10 ** contador
+        z = número % y
+        número = número - z
+        z = z * (10 ** longitud) / (10 ** contador)
+        resultado = resultado + z
+        longitud = longitud - 1
+    return int(resultado)
+
+def impar(x):
+    número = x
+    par = False
+    while par == False:
+        z = número % (10)
+        if z % 2 == 0:
+            par = True
+            var = False
+        else:
+            número = (número - z)
+            if número == 0:
+                var = True
+                par = True
+            número = número / 10
+    return var
+
+contador = 0
+for i in range (1,1001):
+    if i % 10 != 0:
+        x = i + voltear(i)
+        if impar(x) == True:
+            contador = contador + 1
+print(contador)
+
+........................................................................................................................................
