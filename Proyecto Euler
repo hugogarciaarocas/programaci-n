@@ -1,3 +1,15 @@
+print("summatios of primes")
+def primo(x):
+    for i in range (2,int(x/2)+1):
+        if x % i == 0:
+            return False
+    return True
+sum = 0
+for i in range(2,101): #Lo he hecho para que sume los menores a 100 porque sino tardaba demasiado.
+    if primo(i) == True:
+        sum = sum + i
+print(sum)
+........................................................................................................................................
 import sys
 print("How many reversible numbers are there below one thousand?")
 def voltear(x):
