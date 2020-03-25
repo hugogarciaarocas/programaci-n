@@ -24,7 +24,7 @@ while y != 1:
 ........................................................................................................................................
 import sys
 print("How many reversible numbers are there below one thousand?")
-def voltear(x):
+def voltear(x):  #Subprograma para voltear números.
     contador = 0
     número = x
     longitud = 0
@@ -42,7 +42,7 @@ def voltear(x):
         longitud = longitud - 1
     return int(resultado)
 
-def impar(x):
+def impar(x):  #Subprograma para ver si todas la cifras de un número son impares.
     número = x
     par = False
     while par == False:
@@ -60,7 +60,7 @@ def impar(x):
 
 contador = 0
 for i in range (1,1001):
-    if i % 10 != 0:
+    if i % 10 != 0:  #Si el número acaba en 0 lo tomamos como no volteable.
         x = i + voltear(i)
         if impar(x) == True:
             contador = contador + 1
