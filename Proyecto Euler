@@ -67,7 +67,7 @@ for i in range (1,1001):
 print(contador)
 
 ........................................................................................................................................
-print("Concealed Square:Concealed Square")
+print("Concealed Square")
 def num_int(x): #Subprograma que cambia los números en posición impar por 0 (empezando por la izq)
     longitud = 0  # Ejemplo: num_int(11111) = 10101
     cont = 0
