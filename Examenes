@@ -77,3 +77,26 @@ while letra != ".":
     if consonante_creciente():
         contador += 1
 print(contador)
+........................................................................................................................................
+
+ej3_ex2
+
+l1 = [1,0,1,0,3,5,0,0,1,0,3,0,0,0,4,4,0]
+final = len(l1) -1
+inicio = 0
+while inicio < len(l1) and inicio <= final:
+    if l1[inicio] == 0 and l1[final] != 0:
+        l1[inicio] = l1[final]
+        l1[final] = 0
+        inicio +=1
+        final -= 1
+    elif l1[inicio] == 0 and l1[final] == 0:
+        final -= 1
+    else:
+        inicio += 1
+
+print(l1)
+
+while l1[len(l1) - 1] == 0:
+    l1.pop()
+print(l1)
