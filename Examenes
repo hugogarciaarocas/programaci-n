@@ -38,6 +38,73 @@ while letra != "." and encontrado == False:
     letra = sys.stdin.read(1)
 ........................................................................................................................................
 
+Ej1_ex2
+
+class Triangulo:
+    def __init__(self, a,b,c):
+        self.__triangulo =[a,b,c]
+
+    def agrandar(self,r):
+
+        for i in range(0,2):
+            self.__triangulo[i] += r
+
+    def construilble(self):
+        cons = True
+        if (self.__triangulo[0] + self.__triangulo[1]) <= self.__triangulo[2]:
+            cons = False
+        if (self.__triangulo[1] + self.__triangulo[2]) <= self.__triangulo[0]:
+            cons = False
+        if (self.__triangulo[0] + self.__triangulo[2]) <= self.__triangulo[1]:
+            cons = False
+        return cons
+
+    def proporcional(self,r,s,t):
+        if r/self.__triangulo[0] == s/self.__triangulo[1] == t/self.__triangulo[2]:
+            return True
+        else:
+            return False
+
+    def area(self):
+        x = (self.__triangulo[0] + self.__triangulo[1] + self.__triangulo[2])/2
+        area = (x*(x-self.__triangulo[0])*(x-self.__triangulo[1])*(x-self.__triangulo[2]))**0.5
+        return area
+
+    def lado_mayor(self):
+        if self.__triangulo[0] >= self.__triangulo[1] and self.__triangulo[0] >= self.__triangulo[2]:
+            return self.__triangulo[0]
+        if self.__triangulo[1] >= self.__triangulo[0] and self.__triangulo[1] >= self.__triangulo[2]:
+            return self.__triangulo[1]
+        if self.__triangulo[2] >= self.__triangulo[0] and self.__triangulo[2] >= self.__triangulo[1]:
+            return self.__triangulo[2]
+    def tipo(self):
+        if self.__triangulo[0] == self.__triangulo[1] == self.__triangulo[2]:
+            return 1
+        elif self.__triangulo[0] != self.__triangulo[1] != self.__triangulo[2]:
+            return 3
+        else:
+            return 2
+
+    def es_rectangulo(self):
+        if self.lado_mayor() == self.__triangulo[0]:
+            h_2 = (self.__triangulo[0])**2
+            catetos_2 = (self.__triangulo[1])**2 + (self.__triangulo[2])**2
+        elif self.lado_mayor() == self.__triangulo[1]:
+            h_2 = (self.__triangulo[1])**2
+            catetos_2 = ((self.__triangulo[0])**2) + ((self.__triangulo[2])**2)
+        else:
+            h_2 = (self.__triangulo[2]) ** 2
+            catetos_2 = ((self.__triangulo[0]) ** 2) + ((self.__triangulo[1]) ** 2)
+        if h_2 == catetos_2:
+            return True
+        if h_2 != catetos_2:
+            return False
+
+
+
+
+
+........................................................................................................................................
 Ej2_ex2
 
 
